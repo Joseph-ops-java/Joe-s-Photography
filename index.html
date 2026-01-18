@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joe — Photography Portfolio</title>
+  <meta name="description" content="Cinematic photography portfolio by Joe." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0e0e0e;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 10%;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    header p {
+      margin-top: 15px;
+      color: #b5b5b5;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .about {
+      max-width: 700px;
+    }
+
+    .about h2,
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: #cfcfcf;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: 1px solid #f5f5f5;
+      color: #f5f5f5;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .contact a:hover {
+      background: #f5f5f5;
+      color: #0e0e0e;
+    }
+
+    footer {
+      padding: 40px 10%;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Joe</h1>
+    <p>Cinematic Photography · Lifestyle · Portraits</p>
+  </header>
+
+  <section>
+    <div class="gallery">
+      <!-- Replace src values with your own images -->
+      <img src="Edits/001.jpg" alt="Photo 1">
+      <img src="Edits/002.jpg" alt="Photo 2">
+      <img src="Edits/003.jpg" alt="Photo 3">
+      <img src="Edits/004.jpg" alt="Photo 4">
+      <img src="Edits/005.jpg" alt="Photo 5">
+      <img src="Edits/006.jpg" alt="Photo 6">
+      <img src="Edits/007.jpg" alt="Photo 7">
+      <img src="Edits/008.jpg" alt="Photo 8">
+      <img src="Edits/009.jpg" alt="Photo 9">
+      <img src="Edits/010.jpg" alt="Photo 10">
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About</h2>
+    <p>
+      I’m Joe, a photographer focused on cinematic, natural imagery. I work with
+      individuals and brands to create clean, story-driven visuals for social media,
+      personal branding, and creative projects.
+    </p>
+  </section>
+
+  <section class="contact">
+    <h2>Work With Me</h2>
+    <p>Available for portraits, content creation, and collaborations.</p>
+    <a href="josephagbajama18@gmail.com">Get in Touch</a>
+    <a href="https://www.instagram.com/definitelynotaspamaccnt?igsh=Y3V0b2RxZDYydnA5&utm_source=qr">Instagram</a>
+  </section>
+
+  <footer>
+    © 2026 Joe — All rights reserved
+  </footer>
+
+</body>
+</html>
