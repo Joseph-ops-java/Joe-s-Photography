@@ -4,41 +4,72 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cinematic — Joe</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
-body{background:#0e0e0e;color:#f5f5f5}
-nav{padding:30px 10%;display:flex;justify-content:space-between}
-nav a{color:#f5f5f5;text-decoration:none;margin-left:20px}
-section{padding:60px 10%}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.gallery img{width:100%;border-radius:14px}
-</style>
+<meta name="description" content="Cinematic photography by Joe, Cork-based photographer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
+<body id="top">
 
-<body>
-
-<nav>
-  <a href="index.html">← Home</a>
-  <div>
+<nav class="nav">
+  <a class="brand" href="index.html">Joe<em>.</em></a>
+  <div class="nav-links">
+    <a href="cinematic.html" aria-current="page">Cinematic</a>
     <a href="lifestyle.html">Lifestyle</a>
     <a href="portraits.html">Portraits</a>
   </div>
 </nav>
 
-<section>
-  <h2>Cinematic</h2><br>
-  <div class="gallery">
-    <img src="046.jpg">
-    <img src="052.jpg">
-    <img src="005.jpg">
-    <img src="028.jpg">
-    <img src="026.jpg">
-    <img src="047.jpg">
-    <img src="054.jpg">
+<header class="page-head">
+  <div>
+    <span class="eyebrow">Collection 01</span>
+    <h1>Cine<em>matic</em></h1>
   </div>
-</section>
+  <p><b>07</b>Streets after dark. Sodium light, wet tarmac and the quiet between moments.</p>
+</header>
 
+<main class="gallery">
+  <button class="shot reveal" type="button" style="--ar:0.6667" aria-label="Open photo 046">
+    <img src="web/046.jpg" width="1200" height="1800" alt="Cinematic photograph, frame 046" fetchpriority="high" decoding="async">
+    <span class="cap">№ 046</span>
+  </button>
+  <button class="shot reveal" type="button" style="--ar:0.7161" aria-label="Open photo 052">
+    <img src="web/052.jpg" width="1289" height="1800" alt="Cinematic photograph, frame 052" fetchpriority="high" decoding="async">
+    <span class="cap">№ 052</span>
+  </button>
+  <button class="shot reveal" type="button" style="--ar:0.6667" aria-label="Open photo 005">
+    <img src="web/005.jpg" width="1200" height="1800" alt="Cinematic photograph, frame 005" loading="lazy" decoding="async">
+    <span class="cap">№ 005</span>
+  </button>
+  <button class="shot reveal" type="button" style="--ar:1.5000" aria-label="Open photo 028">
+    <img src="web/028.jpg" width="1800" height="1200" alt="Cinematic photograph, frame 028" loading="lazy" decoding="async">
+    <span class="cap">№ 028</span>
+  </button>
+  <button class="shot reveal" type="button" style="--ar:1.5000" aria-label="Open photo 026">
+    <img src="web/026.jpg" width="1800" height="1200" alt="Cinematic photograph, frame 026" loading="lazy" decoding="async">
+    <span class="cap">№ 026</span>
+  </button>
+  <button class="shot reveal" type="button" style="--ar:1.5000" aria-label="Open photo 047">
+    <img src="web/047.jpg" width="1800" height="1200" alt="Cinematic photograph, frame 047" loading="lazy" decoding="async">
+    <span class="cap">№ 047</span>
+  </button>
+  <button class="shot reveal" type="button" style="--ar:1.5000" aria-label="Open photo 054">
+    <img src="web/054.jpg" width="1800" height="1200" alt="Cinematic photograph, frame 054" loading="lazy" decoding="async">
+    <span class="cap">№ 054</span>
+  </button>
+</main>
+
+<a class="next" href="lifestyle.html">
+  <span class="eyebrow">Next collection</span>
+  <h2>Lifestyle →</h2>
+</a>
+
+<footer class="footer">
+  <span>© 2026 Joe · Cork, Ireland</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

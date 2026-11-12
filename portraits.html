@@ -4,36 +4,52 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portraits — Joe</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
-body{background:#0e0e0e;color:#f5f5f5}
-nav{padding:30px 10%;display:flex;justify-content:space-between}
-nav a{color:#f5f5f5;text-decoration:none;margin-left:20px}
-section{padding:60px 10%}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.gallery img{width:100%;border-radius:14px}
-</style>
+<meta name="description" content="Portraits photography by Joe, Cork-based photographer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
+<body id="top">
 
-<body>
-
-<nav>
-  <a href="index.html">← Home</a>
-  <div>
+<nav class="nav">
+  <a class="brand" href="index.html">Joe<em>.</em></a>
+  <div class="nav-links">
     <a href="cinematic.html">Cinematic</a>
     <a href="lifestyle.html">Lifestyle</a>
+    <a href="portraits.html" aria-current="page">Portraits</a>
   </div>
 </nav>
 
-<section>
-  <h2>Portraits</h2><br>
-  <div class="gallery">
-    <img src="035.jpg">
-    <img src="062.jpg">
+<header class="page-head">
+  <div>
+    <span class="eyebrow">Collection 03</span>
+    <h1>Por<em>traits</em></h1>
   </div>
-</section>
+  <p><b>02</b>Faces and character, in available light.</p>
+</header>
 
+<main class="gallery">
+  <button class="shot reveal" type="button" style="--ar:1.5000" aria-label="Open photo 035">
+    <img src="web/035.jpg" width="1800" height="1200" alt="Portraits photograph, frame 035" fetchpriority="high" decoding="async">
+    <span class="cap">№ 035</span>
+  </button>
+  <button class="shot reveal" type="button" style="--ar:1.5000" aria-label="Open photo 062">
+    <img src="web/062.jpg" width="1800" height="1200" alt="Portraits photograph, frame 062" fetchpriority="high" decoding="async">
+    <span class="cap">№ 062</span>
+  </button>
+</main>
+
+<a class="next" href="cinematic.html">
+  <span class="eyebrow">Next collection</span>
+  <h2>Cinematic →</h2>
+</a>
+
+<footer class="footer">
+  <span>© 2026 Joe · Cork, Ireland</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
