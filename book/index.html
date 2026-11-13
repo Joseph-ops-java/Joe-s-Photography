@@ -296,7 +296,7 @@ html { color-scheme: dark; }
 
     doneEl.innerHTML = "Thanks, " + esc(val("name").split(" ")[0]) + ". Your email app should open with the request ready to send. If it doesn't, email me at <a href=\"mailto:" + EMAIL + "\">" + EMAIL + "</a> with your date.";
     doneEl.hidden = false;
-    window.location.href = href;
+    try { window.location.href = href; } catch (err) { /* the note above has the address */ }
   });
 })();
 </script>
