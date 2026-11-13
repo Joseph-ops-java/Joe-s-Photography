@@ -131,6 +131,10 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
   .lb-prev,.lb-next{top:auto;bottom:14px;transform:none}
   .shot .cap{opacity:1;transform:none}
 }
+@media (max-width:380px){
+  .nav-links{gap:11px}
+  .nav-links a{letter-spacing:.09em}
+}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   .reveal{opacity:1;transform:none}
