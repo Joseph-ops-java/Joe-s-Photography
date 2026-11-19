@@ -58,9 +58,9 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
 .section-head span{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
 
 /* collection cards */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,28px)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,2vw,28px)}
 .card{position:relative;display:block;aspect-ratio:3/4.2;overflow:hidden;background:var(--bg-soft)}
-.card:nth-child(2){margin-top:clamp(0px,5vw,70px)}
+.card:nth-child(2),.card:nth-child(4){margin-top:clamp(0px,5vw,70px)}
 .card img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1),filter .8s;filter:saturate(.85) brightness(.82)}
 .card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(11,10,9,.88) 100%)}
 .card:hover img{transform:scale(1.06);filter:saturate(1.05) brightness(1)}
@@ -115,10 +115,13 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
 .reveal{opacity:0;transform:translateY(28px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
 .reveal.in{opacity:1;transform:none}
 
+@media (max-width:1200px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+}
 @media (max-width:900px){
   .cards{grid-template-columns:1fr}
   .card{aspect-ratio:4/4.6}
-  .card:nth-child(2){margin-top:0}
+  .card:nth-child(2),.card:nth-child(4){margin-top:0}
   .page-head{grid-template-columns:1fr}
   .page-head p{text-align:left}
   .scroll-cue{display:none}
@@ -132,8 +135,9 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
   .shot .cap{opacity:1;transform:none}
 }
 @media (max-width:380px){
-  .nav-links{gap:11px}
-  .nav-links a{letter-spacing:.09em}
+  .nav-links{gap:8px}
+  .nav-links a{letter-spacing:.04em;font-size:.58rem}
+  .brand{font-size:1.2rem}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
